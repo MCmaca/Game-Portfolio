@@ -1,0 +1,43 @@
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- Editors ---
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*~
+
+# --- Node / tooling (if you ever add any) ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# --- Secrets & local config ---
+.env
+.env.*
+!.env.example
+.claude/settings.local.json
+
+# --- Hosting tool caches ---
+.netlify/
+.vercel/
+
+# --- Source/working files you don't want online (uncomment if they end up in the repo) ---
+# *.psd
+# *.kra
+# *.clip
+# *.blend
+# *.blend1
+# *.fig
+
+# NOTE: app/games/ (Unity WebGL builds) and app/assets/ are intentionally NOT ignored —
+# the live site needs them. GitHub rejects single files over 100 MB; if a build's
+# .data/.wasm file is bigger, compress the build or use Git LFS.

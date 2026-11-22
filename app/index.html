@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desktop</title>
+  <meta name="description" content="Game & art portfolio — a little desktop to explore.">
+  <link rel="icon" href="assets/icons/grim-soul-tales.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=JetBrains+Mono:wght@700&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Light is the default; remember the visitor's choice. -->
+  <script>try { if (localStorage.getItem("pf.theme") === '"dark"') document.documentElement.dataset.theme = "dark"; } catch (e) {}</script>
+</head>
+<body>
+  <main id="desktop" class="desktop" aria-label="Desktop">
+    <div id="icons" class="icons" role="list" aria-label="Desktop icons"></div>
+    <div class="greeting">
+      <h1 id="greet-title"></h1>
+      <p id="greet-sub"></p>
+    </div>
+  </main>
+
+  <div id="windows" class="windows"></div>
+
+  <footer id="taskbar" class="taskbar">
+    <div class="tb-left">
+      <button type="button" id="tb-logo" class="tb-logo" title="Profile — opens the browser" aria-label="Profile"></button>
+    </div>
+    <nav id="tb-apps" class="tb-apps" aria-label="Apps"></nav>
+    <div class="tb-tray">
+      <span class="tray-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24"><path d="M2.5 9a14 14 0 0 1 19 0M5.5 12.5a9.5 9.5 0 0 1 13 0M8.8 16a5 5 0 0 1 6.4 0" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><circle cx="12" cy="19.2" r="1.2" fill="currentColor"/></svg></span>
+      <span class="tray-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24"><path d="M11 5.5L6.5 9H3.5v6h3l4.5 3.5z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M15.5 9a4.5 4.5 0 0 1 0 6M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></span>
+      <div class="clock"><b id="clock-time"></b><span id="clock-date"></span></div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">This portfolio is a little desktop that needs JavaScript to run.</p></noscript>
+
+  <script src="js/config.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/wm.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/browser.js"></script>
+  <script src="js/trailers.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
